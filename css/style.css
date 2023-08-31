@@ -62,5 +62,5 @@ aside{
   height: calc(100vh - 70px);
 }
 main{
-  width: calc(100vw - );
+  width: calc(100vw - 80px);
 }
