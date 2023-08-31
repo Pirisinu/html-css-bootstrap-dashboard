@@ -21,11 +21,13 @@
   <title>Bootstrap Dashboard</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar py-3 bg-body-tertiary">
+  <header class="position-fixed  w-100 ">
+    <nav class="navbar h-100 py-0  bg-body-tertiary">
       <div class="container-fluid row-cols-3 bg-white">
-        <div class="col-1">logo</div>
-        <div class="col-9">
+        <div class="col-1">
+          <img class="ltl_img" src="img/mobile-logo.png" alt="">
+        </div>
+        <div class="col-8">
           <form role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           </form>
@@ -37,17 +39,17 @@
     </nav>
   </header>
   
-  <div class="box-main d-flex overflow-hidden">
-    <aside class="text-center debug-box d-flex flex-column justify-content-between  ">
-      <div class="debug">
-        <ul class="list-unstyled mt-3 debug">
+  <div class="box-main vh-100  d-flex overflow-hidden">
+    <aside class="personal_bg text-center d-flex flex-column justify-content-between  ">
+      <div class="">
+        <ul class="list-unstyled mt-3">
           <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-house"></i></a></li>
           <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
           <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-signal"></i></a></li>
         </ul>
       </div>
-      <div class="d-flex justify-content-center align-items-end pb-3 debug">
-        <a class="text-light fs-5 debug" href="#"><i class="fa-solid fa-gear"></i></a>
+      <div class="d-flex justify-content-center align-items-end pb-3">
+        <a class="text-light fs-5" href="#"><i class="fa-solid fa-gear"></i></a>
       </div>
     </aside>
     <main class=" overflow-auto debug">
