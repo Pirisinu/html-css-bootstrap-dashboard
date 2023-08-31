@@ -27,34 +27,74 @@
         <div class="col-1">
           <img class="ltl_img" src="img/mobile-logo.png" alt="">
         </div>
-        <div class="col-8">
+        <div class="col-9">
           <form role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           </form>
         </div>
-        <div class="col-1 orange-bell">
-          <i class="fa-solid fa-bell"></i>
+        <div class="col-1 col-lg-2 ">
+          <a class="d-none d-lg-inline-block grey m-3" href="#"><i class="fa-solid fa-list"></i></a>
+          <a class="d-none d-lg-inline-block grey m-3" href="#"><i class="fa-solid fa-circle-question"></i></a>
+          <a class="d-none d-lg-inline-block grey m-3" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          <a class="orange-bell m-3 " href="#"><i class="fa-solid fa-bell"></i></a>
         </div>
       </div>
     </nav>
   </header>
-  
-  <div class="box-main vh-100  d-flex overflow-hidden">
+
+<!-- MAIN-CONTENT-->
+  <div class="box-main vh-100 d-flex overflow-hidden">
+<!-- ASIDE -->
     <aside class="personal_bg text-center d-flex flex-column justify-content-between  ">
-      <div class="">
+      <div>
         <ul class="list-unstyled mt-3">
-          <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-house"></i></a></li>
-          <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
-          <li class="mb-2"><a class="text-light fs-5" href="#"><i class="fa-solid fa-signal"></i></a></li>
+          <li class="mb-2">
+            <a class="text-light fs-5 mx-3 d-lg-flex justify-content-around" href="#">
+              <i class="fa-solid fa-house"></i>
+              <span class="ps-2  d-none d-lg-block">ciao</span>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="text-light fs-5 mx-3 d-lg-flex justify-content-around" href="#">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span class="ps-2  d-none d-lg-block">ciao</span>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="text-light fs-5 mx-3 d-lg-flex justify-content-around" href="#">
+              <i class="fa-solid fa-signal"></i>
+              <span class="ps-2  d-none d-lg-block">ciao</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="d-flex justify-content-center align-items-end pb-3">
         <a class="text-light fs-5" href="#"><i class="fa-solid fa-gear"></i></a>
       </div>
     </aside>
-    <main class=" overflow-auto debug">
-      <div class="row row-cols-1 row-cols-md-2 m-2">
-        <div class="col-md-8 h-100 debug">
+<!-- CONTENT -->
+    <main class="overflow-auto bg-body-tertiary">
+      <div class="top_bar debug">
+
+        <div class="my_offcanvas">
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-plus"></i></button>
+          <div class="offcanvas w-100 offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div>a</div>
+        <div>a</div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2 m-2">
+        <div class="col-lg-8 h-100 debug">
+          <!-- PROSSIME CLASSI -->
           <div class="card mb-3">
             <div class="card-header">
               <h4>Prossime classi</h4>
@@ -73,28 +113,48 @@
               </li>
             </ul>
           </div>
+          <!-- FAQ -->
           <div class="card mb-3">
             <div class="card-header">
-              Featured
+              <h4 class="text-uppercase ">f.a.q.</h4>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">Come aggiungere uno studente?</li>
+              <li class="list-group-item">Come posso accedere alle informazioni del mio account?</li>
+              <li class="list-group-item">Posso usare questa dashbboard da mobile?</li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
+          <!-- CARD TODO -->
           <div class="card mb-3">
             <div class="card-header">
               <h4 class="fw-bold">Todo</h4>
             </div>
-            <ul class="list-group list-group-flush p-3">
-              <li class="list-group-item"><input type="checkbox"> An item</li>
-              <li class="list-group-item"><input type="checkbox"> A second item</li>
-              <li class="list-group-item"><input type="checkbox"> A third item</li>
+            <ul class="list-group border border-1 rounded-2   list-group-flush m-2 ">
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Kickoff nuove classi
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item"><div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lezione su Bootstrap 5 in classe#75
+                </label>
+              </div></li>
+              <li class="list-group-item"><div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Controllare username github studenti
+                </label>
+              </div></li>
             </ul>
           </div>
+          <!-- CARD STATS -->
           <div class="card mb-3">
             <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
             <div class="card-body">
