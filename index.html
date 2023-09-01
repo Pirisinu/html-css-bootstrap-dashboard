@@ -74,6 +74,7 @@
     </aside>
 <!-- CONTENT -->
     <main class="overflow-auto bg-body-tertiary">
+
       <div class="row flex-column flex-md-row bg-primary p-3 text-light">
 
         <div class="col my-3  order-md-last">
@@ -109,34 +110,53 @@
         </div>
 
         <div class="col my-3">
-          <div class="" >
-            <p class="">Studenti online negli ultimi 30 minuti</p>
+          <div>
+            <p>Studenti online negli ultimi 30 minuti</p>
             <p class="h4">125
             </p>
           </div>
         </div>
 
       </div>
+
       <div class="row row-cols-1 row-cols-lg-2 m-2">
-        <div class="col-lg-8 h-100">
+        <div class="col-lg-8">
           <!-- PROSSIME CLASSI -->
           <div class="card mb-3">
             <div class="card-header">
               <h4>Prossime classi</h4>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between ">
-                <div class="">Nome</div>
-                <div class="text-end">
-                  <div class="row ">
-                    <div class="col debug">Data inizio</div>
-                    <div class="col debug">Roi</div>
-                    <div class="col debug">Stato</div>
-                    <div class="col debug">Azioni</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            <table class="table table-hover">
+              <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Last</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        
+          </table>
+        
           </div>
           <!-- FAQ -->
           <div class="card mb-3">
@@ -223,7 +243,8 @@
             </div>
           </div>
         </div>
-       </div>
+      </div>
+
     </main>
   </div>
 
