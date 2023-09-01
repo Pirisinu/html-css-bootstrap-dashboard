@@ -61,9 +61,7 @@ a{
   background: url(../img/sidebar-bg.png);
   background-color: #051E34;
 }
-.personal_offcanvas{
-  width: 100%;
-}
+
 .personal_bg_icon{
   background-color: #F26551;
 }
@@ -99,5 +97,10 @@ main{
   }
   main{
     width: calc(100vw - 150px);
+  }
+}
+@media screen and (min-width:998px) {
+  .personal_offcanvas{
+    width:50%!important;
   }
 }

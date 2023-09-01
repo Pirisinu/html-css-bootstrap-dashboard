@@ -22,13 +22,13 @@
 </head>
 <body>
 
-  <header class="position-fixed  w-100 ">
+  <header class="position-fixed w-100 ">
 
     <nav class="navbar h-100 py-0  bg-body-tertiary">
 
       <div class="container-fluid">
         <div class="row row-cols-3 w-100 bg-white">
-          <div class="col-1">
+          <div class="col-1 d-flex justify-content-center">
             <img class="ltl_img" src="img/mobile-logo.png" alt="">
           </div>
   
@@ -75,7 +75,7 @@
   <div class="box-main vh-100 d-flex overflow-hidden">
 
 <!-- ASIDE -->
-    <aside class="personal_bg text-center d-flex flex-column justify-content-between  ">
+    <aside class="personal_bg text-center d-flex flex-column justify-content-between">
       <div>
         <ul class="list-unstyled mt-3">
           <li class="my-3 btn btn-outline-secondary border-0">
@@ -99,28 +99,87 @@
         </ul>
       </div>
       <div class="d-flex justify-content-center align-items-end pb-3">
-        <a class="text-light fs-5" href="#"><i class="fa-solid fa-gear"></i></a>
+        <a class="text-light btn btn-outline-secondary border-0 fs-5" href="#"><i class="fa-solid fa-gear"></i></a>
       </div>
     </aside>
 
 <!-- CONTENT -->
     <main class="overflow-auto bg-body-tertiary">
 
-      <div class="row flex-column mb-4 flex-md-row bg-primary px-3 text-light">
+      <div class="row flex-column mb-4 flex-md-row row-cols-md-3 bg-primary px-3 text-light">
 
-        <div class="col my-3  order-md-last">
+        <div class="col my-3 order-md-last">
           <div class="personal_offcanvas d-flex align-items-center">
 
             <h5 class="text-capitalize me-3 mb-0">Nuovo Studente</h5>
   
             <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-plus"></i></button>
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas offcanvas-end w-100 personal_offcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                <p>Try scrolling the rest of the page to see this option in action.</p>
+                <form class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Il tuo nome">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="Cognome" class="form-label">Cognome</label>
+                    <input type="password" class="form-control" id="Cognome" placeholder="Il tuo cognome">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="La tua email">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="Passworld" class="form-label">Passworld</label>
+                    <input type="password" class="form-control" id="Passworld" placeholder="La tua passworld">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Il tuo indirizzo">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="city" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="city" placeholder="La tua città">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Italia</option>
+                      <option>Francia</option>
+                      <option>Spagna</option>
+                      <option>Germania</option>
+                      <option>Olanda</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-2">
+                    <label for="inputZip" class="form-label">Cap</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <label for="formFileMultiple" class="form-label">Scegli</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="reset" class="btn btn-warning">Svuota</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -137,6 +196,8 @@
             <a class="badge rounded-pill text-bg-secondary h-50">
               <i class="fa-solid fa-plus"></i>
             </a>
+            <a class="badge rounded-pill text-bg-secondary h-50">Piano Blaze</a>
+            <a class="badge rounded-pill text-bg-secondary h-50">Piano Blaze</a>
           </div>
         </div>
 
@@ -304,7 +365,7 @@
               
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     <p>Come aggiungere un nuovo studente?</p>
                   </button>
                 </h2>
@@ -315,7 +376,7 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     <p>Come posso accedere alle informazioni del mio account?</p>
                   </button>
                 </h2>
@@ -326,7 +387,7 @@
 
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     <p>Posso usare questa dashboard da mobile?</p>
                   </button>
                 </h2>
