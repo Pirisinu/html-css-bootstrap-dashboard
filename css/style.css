@@ -54,9 +54,16 @@ a{
   width: 130px;
   height: 25px;
 }
+.personal_th{
+  width: 100px;
+}
 .personal_bg{
   background: url(../img/sidebar-bg.png);
   background-color: #051E34;
+}
+
+.personal_bg_icon{
+  background-color: #F26551;
 }
 .ltl_img{
   width: 55px;
